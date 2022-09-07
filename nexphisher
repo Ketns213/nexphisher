@@ -37,8 +37,7 @@ fi
 
 }
 
-reqs() {
-
+reqs() 
 command -v php > /dev/null 2>&1 || { printf "\n\e[0m\e[96m Packages are not Installed ! type \e[0m\e[93mbash setup\e[0m\n\n"; exit 1; }
 command -v curl > /dev/null 2>&1 || { printf "\n\e[0m\e[96m Packages are not Installed ! type \e[0m\e[93mbash setup\e[0m\n\n"; exit 1; }
 command -v ssh > /dev/null 2>&1 || { printf "\n\e[0m\e[96m Packages are not Installed ! type \e[0m\e[93mbash setup\e[0m\n\n"; exit 1; }
@@ -298,7 +297,7 @@ tunnel_menu
 else
 printf "\n\n \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\e[1;93m Invalid option \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\n"
 sleep 1
-banner
+bannerbanner
 menu
 fi
 
